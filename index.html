@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>J<span>P</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="oval-button" href="#main">Home</a></li>
+                    <li><a class="oval-button" href="#about">Acerca de mí</a></li>
+                    <li><a class="oval-button" href="#portafolio">Portafolio</a></li>
+                    <li><a class="oval-button" href="#container-section">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main" id="main">
+            <div class="info-contet">
+              <h1>Jack <samp></samp>Pablo </h1> 
+              <p>Soy una persona dedicada y apasionada por mi trabajo, siempre buscando aprender nuevas tecnologías y mantenerme actualizado en las últimas tendencias de desarrollo y mantenimiento de computadoras. Estoy listo para enfrentar nuevos desafíos y trabajar en equipo para lograr resultados excepcionales.</p>
+                <a download href="https://drive.google.com/file/d/13CBAXbxe44jUxh1vzt_pbaIkbjSFSFs9/view?usp=sharing" target="_blank">
+                <button class="download-cv">Download CV</button>
+            </a>
+            </div>
+            <img src="img/as.png" class="img-small">
+    
+        </main>
+
+    </div>
+    <div class="about" id="about">
+        <img src="./img/about.png" alt="about">
+        
+        <div class="about-info">
+            <h2>Acerca de mi</h2>
+            <div class="divider"></div>
+            <p>Desde el inicio del programa de estudio para ser tecnico en Arquitectura de Plataformas y Servicios de Tecnologías de la Información me estado especializando en el deseño de app ,con esto me ha convertido en una persona con metas claras,cada dia me levanto con las ganas de aprender temas nuevos esto hace de mi una persona constante, curiosa y sin miedos de enfrentarme a nuevas metas </p>
+            <p></p>
+            <button class="download-cv">Leer mas</button>
+        </div>
+    </div>
+
+    <div class="portafolio" id="portafolio">
+        <div class ="portafolio-headings">
+            <h2>Mi portafolio</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card__img">
+
+                </div>
+                <div class="card__title">
+                    <h2>CALCULADORAIMC </h2>
+                </div>
+                <div class="card__projects-links">
+                    <a href="https://github.com/Jack18l1/CALCULADORAIMC" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+                <div class="proyect-details-content">
+                    <button class="project-details download-cv">
+                        <a href="">Projecto detalles</a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+
+                </div>
+                <div class="card__title">
+                    <h2>Pagina Web con base de datos</h2>
+                </div>
+                <div class="card__projects-links">
+                    <a href="https://github.com/Jack18l1/PROGRAMACION.git" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+                <div class="proyect-details-content">
+                    <button class="project-details download-cv">
+                        <a href="">Projecto detalles</a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+
+                </div>
+                <div class="card__title">
+                    <h2>Descripción de proyecto </h2>
+                </div>
+                <div class="card__projects-links">
+                    <a href="https://github.com/Jack18l1/CALCULADORAIMC" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+                <div class="proyect-details-content">
+                    <button class="project-details download-cv">
+                        <a href="">Projecto detalles</a>
+                    </button>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="container-section" id="container-section">
+        <div class="contact-headings">
+            <h2>Contacto</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+            <img src="./img/ad.png" alt="as">
+            <div class="contact-form">    
+                <h4>Enviarme un mensaje..</h4>
+                <form class="form" onsubmit="sendMessage(event)">
+                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                    <textarea id="message" placeholder="Por favor escribe un mensaje"></textarea>
+                    <button class="btn-submit" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+    
+            // Obtener los valores de los campos del formulario
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+    
+            // Enviar el mensaje mediante una solicitud AJAX o realizar cualquier otra lógica necesaria
+            // Aquí, simplemente mostraremos una notificación en la página
+            alert('¡Mensaje enviado correctamente!');
+            
+            // Restablecer el formulario
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        }
+    </script>
+    <footer class="footer"> 
+        <div class="footer-content">
+            <h2>Jack Pablo</h2>
+            <h5>Tecnico</h5>
+        </div>
+        <div class="social-networks">
+            <a href="https://www.instagram.com/jackpablo51/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/JackPabloA1" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
